@@ -51,7 +51,7 @@ def predict():
 
         prediction=model.predict([[gen,height,weight,abil,hp,attack,defense,spatt,spdef,speed,base,growth,legendary,sublegendary,mythical]])
         output=round(prediction[0],2)
-        return render_template('index.html',prediction_text='Total Points! = {}'.format(output))
+        return render_template('prediction.html',prediction_text='Total Points! = {}'.format(output))
 
     else:
         return render_template('index.html')

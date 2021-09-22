@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+    <title>Pokemon - Total Point Prediction</title>
+    <link rel = "icon" href = "{{ url_for("static", filename="images/dp.jpg") }}" height="50px" type = "image/x-icon">
+  </head>
+  <style>
+    .bs-example{
+        margin: 10px;
+    }
+
+    .navbar-brand-own
+    {
+    position: relative;
+    background: url("{{ url_for("static", filename="images/dp.png") }}");
+    width: 100px;
+    height: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .form-horizontal .control-label.text-left{
+    text-align: left;}
+
+    #footer {
+   position:fixed;
+   bottom:0;
+   width:100%;
+   height:60px;}
+  </style>
+  <body style='background: url("{{ url_for("static", filename="images/bg.jpg") }}")'>
+    <div class="bs-example">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a href="https://github.com/simranjeet97" class="navbar-brand-own">
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="index.html" class="nav-item nav-link active">HOME</a>
+                    <a href="https://github.com/simranjeet97" class="nav-item nav-link active">GitHub</a>
+                    <a href="https://www.linkedin.com/in/simranjeet97" class="nav-item nav-link active">LinkedIn</a>
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="" class="nav-item nav-link active">Dashboard</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <br><br><br>
+ 
+ <div class="jumbotron">
+  <h1 class="display-4">Pokemon - Total Point Prediction <strong>Result</strong></h1>
+  <br>
+  <h3>{{ prediction_text }}</h3>
+  <br><br>
+  <hr class="my-4">
+  <p>Let's Catch them all!</p>
+  <br>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="https://github.com/simranjeet97" role="button">Source Code</a>
+  </p>
+</div>
+
+<footer class="text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="bs-example text-center p-3" style="color: white;background-color:#343a40;">
+    © 2021 Copyright:
+    <a class="text-light" href="https://www.linkedin.com/in/simranjeet97">FreeBirds Crew</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
